@@ -13,12 +13,16 @@
  *= require_tree .
  *= require_self
  */
-
+ 
+html {
+  height: 100%;
+}
 
 body {
   /*margin: 0;
   padding: 0;*/
   text-align: center;
+  height: 100%;
   
 }
 
@@ -129,7 +133,6 @@ a:hover {
 /*contents                                 */
 /*-----------------------------------------*/
 .container {
-  height: 100%;
   min-height: 100%;
   width: 100%;
   padding-top: 10px;
@@ -281,22 +284,23 @@ footer p {
   float: left;
   width: 80px;
 }
-/*.pagination .page{
-  border: 1px solid;
-  border-radius: 10%;
-  text-align: center;
-}
 
-.pagination .next{
-  border: 1px solid;
-  border-radius: 10%;
-  text-align: center;
-}
+/*.pagination .page{*/
+/*  border: 1px solid;*/
+/*  border-radius: 10%;*/
+/*  text-align: center;*/
+/*}*/
 
-.pagination .last{
-  border: 1px solid;
-  border-radius: 10%;
-}*/
+/*.pagination .next{*/
+/*  border: 1px solid;*/
+/*  border-radius: 10%;*/
+/*  text-align: center;*/
+/*}*/
+
+/*.pagination .last{*/
+/*  border: 1px solid;*/
+/*  border-radius: 10%;*/
+/*}*/
 
 .fixed_post {
   position: fixed;
@@ -309,7 +313,17 @@ footer p {
   width: 100%;
 }
 
+.pagination {
+  width: 100%;
+}
 
+.pagination span {
+    padding: 10px;
+    background: #85CBBF;
+    margin: 5px;
+    color: white;
+    border-radius: 10px;
+}
 
 /*-----------------------------------------*/
 /*show                                     */
@@ -365,6 +379,10 @@ footer p {
   display: none;
 }
 
+.post_in input {
+  max-width: 250px;
+  min-width: 200px;
+}
 
 @media(min-width: 300px) and (max-width: 399px) {
   .posts {

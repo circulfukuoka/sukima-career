@@ -61,6 +61,160 @@
 }
 
 
+  .student_profile input {
+    width: 70%;
+    height: 40px;
+    max-width: 400px;
+  }
+  
+  .student_profile input[type="file"] {
+    /*display: inline-block;*/
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .student_profile{
+    margin-bottom:18px;
+    /*opacity:0.6;*/
+    text-align: center;
+  }
+  
+  .post_head{
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align:center;
+    font-size:35px;
+  }
+
+  .post_head h2{
+    display:inline-block;
+    vertical-align: bottom;
+    font-weight: bolder;
+    color: #58858E;
+  }
+  
+  .student_image {
+    margin-bottom: 20px;
+  }
+  
+  .student_image img {
+    width: 20%;
+    min-width: 150px;
+    margin: 0 auto;
+  }
+  
+  .mypage_name {
+    color: #58858E;
+  }
+  
+  .mypage_show_btn {
+    margin: 20px;
+  }
+  
+  .mypage_show_btn p a {
+    font-weight: bold;
+    color: #58858E;
+  }
+  
+  .prof_edit {
+    margin-bottom: 10px;
+  }
+
+.guide_regist_btn {
+  margin: 10px 0;
+}
+
+.guide_company_btn {
+  margin-bottom: 10px;
+}
+
+  .body_ya{
+    background-color: #D3F2E9;
+    color:#064444;
+    height:auto;
+    margin-bottom: 20px;
+  }
+
+  .form_label {
+    width: 100%;
+  }
+  
+  .radio01-input:checked + .radio01-parts{
+    color: #009a9a;
+  }
+  .radio01-input:checked + .radio01-parts::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 11px;
+    height: 11px;
+    background: #009a9a;
+  }
+
+  .radio{
+    display: inline-block;
+    width:100%;
+  }
+
+  .radio01-input{
+    display: none;
+  }
+  .radio01-parts{
+    padding-left: 20px;
+    position:relative;
+    margin-right: 10px;
+  }
+  .radio01-parts::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #999;
+    background-color: white;
+  }
+
+  textarea.student_introduce{
+    height:300px;
+    width:70%;
+    max-width: 400px;
+    box-shadow:3px 3px 3px rgba(122,122,122,0.7);
+  }
+
+  .student_introduce{
+    border: hidden;
+  }
+
+  .post_in{
+    text-align:center;
+    padding-bottom:5px;
+    padding-top:5px;
+    font-size:25px;
+  }
+
+  .input_btn{
+    margin:0 auto;
+    background-color:#58858E;
+    color:white;
+    text-align:center;
+    width:180px;
+    /*padding-top:8px;*/
+    /*padding-bottom:8px;*/
+    border-radius:50px;
+    font-size:20px;
+    /*line-height:36px;*/
+  }
+
+  .input_btn{
+    display:inline-block;
+    line-height: 36px;
+    padding: 8px;
+  }
+
 /* users/registration/index.html.erbのSCSS */
 
 @media screen and (max-width: 640px) {
@@ -110,22 +264,7 @@
   .row{
     padding:0px 13%;
   }
-
-  .post_head{
-    padding-top:15px;
-    padding-bottom:15px;
-    text-align:center;
-    font-size:35px;
-  }
-
-  .post_head h2{
-    display:inline-block;
-    vertical-align: bottom;
-    font-weight: bolder;
-    color: #58858E;
-  }
-
-
+  
   .post_kind{
     font-size:5px;
   }
@@ -179,13 +318,6 @@
     box-shadow:6px 6px 4px rgba(122,122,122,0.7);
   }
 
-  .post_in{
-    text-align:center;
-    padding-bottom:5px;
-    padding-top:40px;
-    font-size:25px;
-  }
-
   textarea::-webkit-input-placeholder {
     color: #ccc;
     font-size:25px;
@@ -202,36 +334,11 @@
     color:#ccc;
   }
 
-  .input_btn{
-    margin:0 auto;
-    background-color:#58858E;
-    color:white;
-    text-align:center;
-    width:180px;
-    /*padding-top:8px;*/
-    /*padding-bottom:8px;*/
-    border-radius:50px;
-    font-size:20px;
-    /*line-height:36px;*/
-  }
-
-  .input_btn{
-    display:inline-block;
-    line-height: 36px;
-    padding: 8px;
-  }
-
   img.post_img{
     display:inline-block;
     vertical-align: middle;
     width:40px;
     height:40px;
-  }
-
-  .body_ya{
-    background-color: #D3F2E9;
-    color:#064444;
-    height:auto;
   }
 
   img.head_img{
@@ -435,19 +542,19 @@
     height:auto;
   }
 
-  .student_image {
-    position: relative;
-    overflow: hidden;
-    height: 70px;
-    width: 80%;
-    margin: 0 auto 15px;
-  }
+  /*.student_image {*/
+  /*  position: relative;*/
+  /*  overflow: hidden;*/
+  /*  height: 70px;*/
+  /*  width: 80%;*/
+  /*  margin: 0 auto 15px;*/
+  /*}*/
 
-  .student_image img{
-    height: 70px;
-    width: 70px;
-    border-radius: 10px;
-  }
+  /*.student_image img{*/
+  /*  height: 70px;*/
+  /*  width: 70px;*/
+  /*  border-radius: 10px;*/
+  /*}*/
 
   .student_upload_image {
     top: 0;
@@ -467,13 +574,9 @@
     cursor: pointer;
   }
 
-  .form_label {
-    width: 35%;
-  }
-
   .student_profile{
     margin-bottom:18px;
-    opacity:0.6;
+    /*opacity:0.6;*/
     text-align: center;
   }
 
@@ -486,45 +589,6 @@
     width:100%;
   }
 
-  .radio{
-    display: inline-block;
-    width:45%;
-  }
-
-  .radio01-input{
-    display: none;
-  }
-  .radio01-parts{
-    padding-left: 20px;
-    position:relative;
-    margin-right: 10px;
-  }
-  .radio01-parts::before{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #999;
-    background-color: white;
-
-  }
-  .radio01-input:checked + .radio01-parts{
-    color: #009a9a;
-  }
-  .radio01-input:checked + .radio01-parts::after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 11px;
-    height: 11px;
-    background: #009a9a;
-  }
-
   .triangle{
     border:20px solid transparent;
     border-bottom-color:#fff;
@@ -533,14 +597,14 @@
     margin-left: 45%;
   }
 
-  .student_introduce{
-    border: hidden;
-  }
+}
 
-  textarea.student_introduce{
-    height:100px;
-    width:70%;
-    box-shadow:3px 3px 3px rgba(122,122,122,0.7);
+@media screen and (max-width: 420px) {
+  .student_profile input {
+    width: 90%;
   }
-
+  
+  textarea.student_introduce {
+    width: 90%;
+  }
 }

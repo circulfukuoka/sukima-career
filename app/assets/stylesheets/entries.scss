@@ -14,7 +14,7 @@
 
 .entry_image{
   border-radius: 10%;
-  margin: 20px 0 ;
+  margin: 10px 0 ;
 }
 
 .entry_text {
@@ -22,9 +22,17 @@
   line-height: 2em;
 }
 
+.entry_text h4 {
+  margin-bottom: 20px;
+}
+
+.entry_text h3 {
+  margin-bottom: 10px;
+}
+
 .entry_text .entry_words{
   font-size: 16px;
-  height: 100px;
+  height: 300px;
   width: 70%;
   box-shadow: 3px 3px 3px rgba(122,122,122,0.7);
   background-color: #fff;
@@ -54,6 +62,10 @@
 
 .job_cat_btn input:checked + img {
   opacity: 1;
+}
+
+#new_entry input[type="text"], #new_entry textarea {
+  border: 1px solid black;
 }
 
 #entry_title {
@@ -136,6 +148,13 @@
     width: 100%;
     height: 20%;
   }
+}
+
+@media screen and (max-width: 420px) {
+  .entry_text .entry_words{
+    height: 250px;
+    width: 90%;
+    }
 }
 
 @media screen and (max-width: 400px) {

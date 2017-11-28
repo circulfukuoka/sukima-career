@@ -3,10 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // admin
-
-@media screen and (max-width: 640px) {
-  .login_label {
-    width:30%;
+.login_label {
     color: #58858E;
-  }
+    width: 100%;
 }

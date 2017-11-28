@@ -5,7 +5,7 @@
   <div class="student_image">
     <%= image_tag @user.image %>
   </div>
-  <h2><%= @user.name %></h2>
+  <h2 class="mypage_name"><%= @user.name %></h2>
   <table class="companies">
     <tr>
       <th>名前</th>
@@ -42,8 +42,10 @@
       <td><%= @user.skills%></td>
     </tr>
   </table>
-  <p><%= link_to 'プロフィール変更', edit_user_path %></p>
-  <p><%= link_to '投稿一覧', :entries %></p>
+  <div class="mypage_show_btn">
+    <p class="prof_edit"><%= link_to 'プロフィール変更', edit_user_path %></p>
+    <p class="to_entries"><%= link_to '投稿一覧', :entries %></p>
+  </div>
 </div>
 
 
